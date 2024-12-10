@@ -276,7 +276,7 @@ if __name__=='__main__':
 >**从逻辑上看**包依然是一个模块
 
 文件夹中含有init的文件夹才是包
-![[Pasted image 20240515132305.png]]
+![[../imgs/Pasted image 20240515132305.png]]
 ### 几个常用函数
 #### map
 将第二个参数==（必须是iterable）==统统带第一个参数的函数中
@@ -467,10 +467,10 @@ print(stu)            #输出为 你好stone
 
 ### 封装
 无非是对现实世界的一个抽象过程
-![[Pasted image 20240517085436.png]]
+![[../imgs/Pasted image 20240517085436.png]]
 #### 私有成员（java中的private）
 **为什么需要私有成员？**
-![[Pasted image 20240517085547.png]]
+![[../imgs/Pasted image 20240517085547.png]]
 在python中私有成员或方法以__开头
 ```python
  class Phone:
@@ -483,13 +483,13 @@ phone.__keep_single_core()     #运行将报错
 
 ### 继承
 为什么需要继承？继承在现实中的意义是什么？
-![[Pasted image 20240517091609.png]]
+![[../imgs/Pasted image 20240517091609.png]]
 #### 基本语法
 ```python
 class Phone2020(Phone):        #继承了Phone类
 ```
 #### 多继承
-![[Pasted image 20240517092030.png]]
+![[../imgs/Pasted image 20240517092030.png]]
 ```python
 class Phone2020(father1,father2,...):
 ```
@@ -557,11 +557,11 @@ def func(data:union[int,str])->union[int,str]:
 ### 多态
 >多种状态，完成某个行为时，使用不同的对象会得到不同的状态
 
-![[Pasted image 20240517110024.png]]
+![[../imgs/Pasted image 20240517110024.png]]
 #### 抽象类
 作为顶层设计标准，以便子类做具体实现。同时是对子类的**约束**，要求子类必须实现父类的抽象方法
-![[Pasted image 20240517110132.png]]
-![[Pasted image 20240517110344.png]]
+![[../imgs/Pasted image 20240517110132.png]]
+![[../imgs/Pasted image 20240517110344.png]]
 ---
 ### 闭包
 >是一种双层的嵌套函数，内层函数可以访问外层函数变量并返回内层函数对象

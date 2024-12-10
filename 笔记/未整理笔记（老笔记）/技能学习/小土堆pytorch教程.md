@@ -76,7 +76,7 @@ writer.close()
 	为后续神经网络提供不同数据形式
 
 # transforms
-![[Pasted image 20240523135211.png]]
+![[../imgs/Pasted image 20240523135211.png]]
 
 ## 常见的transforms方法
 
@@ -128,7 +128,7 @@ writer.close()
 使用[**torch.nn**](https://pytorch.org/docs/stable/nn.html)中封装好的函数进行操作，**类似**矩阵相乘
 ## Conv2d
 较为常用的参数解释如[链接](https://github.com/vdumoulin/conv_arithmetic/blob/master/README.md)动画所演示，这里着重说一下**out_channels**参数
-![[Pasted image 20240602192425.png]]当out_channels=2时，将使用两个卷积核对同一输入操作，并输出结果。
+![[../imgs/Pasted image 20240602192425.png]]当out_channels=2时，将使用两个卷积核对同一输入操作，并输出结果。
 **注意！**：卷积核的内容是随机生成的，每一次运行都会改变
 
 
@@ -137,29 +137,29 @@ writer.close()
 ## Maxpool2d
 >保留数据特征并减少数据量，[MaxPool2d](https://pytorch.org/docs/stable/generated/torch.nn.MaxPool2d.html#torch.nn.MaxPool2d)]
 
-![[Pasted image 20240603090253.png]]
+![[../imgs/Pasted image 20240603090253.png]]
 输入时为5*5图像，输出后可以大大降低图像数据量。有点类似数据压缩。具体效果如下图所示
-![[Pasted image 20240603100408.png]]
+![[../imgs/Pasted image 20240603100408.png]]
 
 # 非线性激活[Non-linear Activations (weighted sum, nonlinearity)](https://pytorch.org/docs/stable/nn.html#non-linear-activations-weighted-sum-nonlinearity)
 >对图像矩阵执行一系列非线性操作
 
-## nn.ReLu![[Pasted image 20240604093754.png]]
+## nn.ReLu![[../imgs/Pasted image 20240604093754.png]]
 
 # Flatten
 将25个像素（图左）以线性方式转换至目标像素个数（图右）
-![[Pasted image 20240604145230.png]]
+![[../imgs/Pasted image 20240604145230.png]]
 
 # Loss Functions（损失函数）
 >其两大作用为
 >1. 计算实际输出与目标之间的差距
 >2. 为我们更新输出提供依据
 
-![[Pasted image 20240613193459.png]]
+![[../imgs/Pasted image 20240613193459.png]]
 在实际的应用中，我们希望预测结果越来越准确时就需要损失函数
-![[Pasted image 20240615141346.png]]
+![[../imgs/Pasted image 20240615141346.png]]
 `output`的三个数据分别指代Person，dog，cat三者的相似概率，此时通过下图算法
-![[Pasted image 20240615141401.png]]
+![[../imgs/Pasted image 20240615141401.png]]
 可以得到各个类别的损失函数值，之后通过此数值调整网络（使用优化器）
 
 # 优化器[torch.optim](https://pytorch.org/docs/stable/optim.html)
